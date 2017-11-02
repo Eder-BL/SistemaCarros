@@ -17,6 +17,7 @@ namespace SistemaCarros {
             while (opcao != 7) {
                 Console.Clear();
                 Tela.telaInicial();
+                opcao = int.Parse(Console.ReadLine());
 
                 Console.ReadLine();
             }
