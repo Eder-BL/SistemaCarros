@@ -63,6 +63,15 @@ namespace SistemaCarros {
                     Tela.cadastrarMarca();
                 }
                 else if (opcao == 4) {
+                    try {
+                        Tela.cadastrarCarro();
+                    }
+                    catch (ModelException e) {
+                        Console.WriteLine("Erro de negócio: " + e.Message);
+                    }
+                    catch (Exception e) {
+                        Console.WriteLine("Erro inesperado: " + e.Message);
+                    }
 
                 }
                 else if (opcao == 5) {

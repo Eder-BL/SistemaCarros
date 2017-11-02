@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 
 namespace SistemaCarros.dominio {
     class Tela {
@@ -52,6 +50,27 @@ namespace SistemaCarros.dominio {
             Program.marca.Add(M);
         }
 
+        public static void cadastrarCarro() {
+            Console.WriteLine("Digite os dados do carro: ");
+            Console.Write("Marca (código): ");
+            int codMarca = int.Parse(Console.ReadLine());
+            int pos = Program.marca.FindIndex(x => x.codigo == codMarca);
+            if (pos == -1) {
+                throw new ModelException("Código de marca não encontrado: " + codMarca);
+            }
+            Console.Write("Código do carro: ");
+            int codigo = int.Parse(Console.ReadLine());
+            Console.Write("Modelo: ");
+            string modelo = Console.ReadLine();
+            Console.Write("Ano: ");
+            int ano = int.Parse(Console.ReadLine());
+            Console.Write("Preço básico: ");
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            marca M = Program.marca[pos];
+            carro C = new carro(codigo, modelo, ano, preco, M);
+            M.addCarro(C);
+            Program.carro.Add(C);
+        }
 
     }
 }
