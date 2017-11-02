@@ -18,7 +18,11 @@ namespace SistemaCarros.dominio {
         }
 
         public static void mostrarMarcas() {
-           
+            Console.WriteLine("LISTAGEM DE MARCAS:");
+            for (int i = 0; i<Program.marca.Count; i++) {
+                Console.WriteLine(Program.marca[i]);
+            }
+            Console.WriteLine();
         }
 
     }

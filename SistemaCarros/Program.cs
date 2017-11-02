@@ -15,12 +15,33 @@ namespace SistemaCarros {
             int opcao = 0;
 
             // Iniciando as marcas
-            
+            marca m1 = new marca(1001, "Volkswagen", "Alemanha");
+            marca m2 = new marca(1002, "General Motors", "Estados Unidos");
 
             // Iniciando os carros
-            carro c1 = new dominio.carro(101, "Fusca", 1980, 5000.00, m1)
+            carro c1 = new carro(101, "Fusca", 1980, 5000.00, m1);
+            m1.addCarro(c1);
+            carro c2 = new carro(102, "Golf", 2016, 60000.00, m1);
+            m1.addCarro(c2);
+            carro c3 = new carro(103, "Fox", 2017, 30000.00, m1);
+            m1.addCarro(c3);
+            carro c4 = new carro(104, "Cruze", 2016, 30000.00, m2);
+            m2.addCarro(c4);
+            carro c5 = new carro(105, "Cobalt", 2015, 25000.00, m2);
+            m2.addCarro(c5);
+            carro c6 = new carro(106, "Cobalt", 2017, 35000.00, m2);
+            m2.addCarro(c6);
 
-           
+            // ARMAZENANDO AS MARCAS E CARROS NAS LISTAS LOCAIS DO PROGRAMA:
+            marca.Add(m1);
+            marca.Add(m2);
+            carro.Add(c1);
+            carro.Add(c2);
+            carro.Add(c3);
+            carro.Add(c4);
+            carro.Add(c5);
+            carro.Add(c6);
+
             while (opcao != 7) {
                 Console.Clear();
                 Tela.telaInicial();

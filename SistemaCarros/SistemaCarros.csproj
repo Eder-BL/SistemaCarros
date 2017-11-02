@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dominio\Acessorio.cs" />
     <Compile Include="dominio\carro.cs" />
     <Compile Include="dominio\marca.cs" />
     <Compile Include="dominio\Tela.cs" />
