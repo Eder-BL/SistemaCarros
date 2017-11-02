@@ -45,6 +45,7 @@
     <Compile Include="dominio\Acessorio.cs" />
     <Compile Include="dominio\carro.cs" />
     <Compile Include="dominio\marca.cs" />
+    <Compile Include="dominio\ModelException.cs" />
     <Compile Include="dominio\Tela.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -56,6 +56,7 @@ namespace SistemaCarros {
                     Tela.mostrarMarcas();
                 }
                 else if (opcao == 2) {
+                    Tela.mostrarCarrosDeUmaMarca();
 
                 }
                 else if (opcao == 3) {

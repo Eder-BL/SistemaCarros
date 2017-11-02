@@ -25,5 +25,20 @@ namespace SistemaCarros.dominio {
             Console.WriteLine();
         }
 
+        public static void mostrarCarrosDeUmaMarca() {
+            Console.Write("Digite o código da marca: ");
+            int codMarca = int.Parse(Console.ReadLine());
+            int pos = Program.marca.FindIndex(x => x.codigo == codMarca);
+            if (pos == -1) {
+                throw new ModelException("Código de marca não encontrado: " + codMarca);
+            }
+            Console.WriteLine("Carros da marca " + Program.marca[pos].nome + ":");
+            List<carro> lista = Program.marca[pos].carros;
+            for (int i=0; i<lista.Count; i++) {
+                Console.WriteLine(lista[i]);
+            }
+            Console.WriteLine();
+        }
+
     }
 }
