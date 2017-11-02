@@ -40,5 +40,18 @@ namespace SistemaCarros.dominio {
             Console.WriteLine();
         }
 
+        public static void cadastrarMarca() {
+            Console.WriteLine("Digite os dados da marca: ");
+            Console.Write("Código: ");
+            int codigo = int.Parse(Console.ReadLine());
+            Console.Write("Nome: ");
+            string nome = Console.ReadLine();
+            Console.Write("País de origem: ");
+            string pais = Console.ReadLine();
+            marca M = new marca(codigo, nome, pais);
+            Program.marca.Add(M);
+        }
+
+
     }
 }

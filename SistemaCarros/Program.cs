@@ -41,7 +41,7 @@ namespace SistemaCarros {
             carro.Add(c4);
             carro.Add(c5);
             carro.Add(c6);
-
+            
             while (opcao != 7) {
                 Console.Clear();
                 Tela.telaInicial();
@@ -60,7 +60,7 @@ namespace SistemaCarros {
 
                 }
                 else if (opcao == 3) {
-
+                    Tela.cadastrarMarca();
                 }
                 else if (opcao == 4) {
 
