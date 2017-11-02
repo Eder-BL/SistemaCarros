@@ -17,5 +17,9 @@ namespace SistemaCarros.dominio {
             Console.WriteLine("7 - Sair");
         }
 
+        public static void mostrarMarcas() {
+           
+        }
+
     }
 }

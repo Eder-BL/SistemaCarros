@@ -5,17 +5,21 @@ using System.Text;
 using System.Globalization;
 
 namespace SistemaCarros.dominio {
-    class carro {
+    class carro : IComparable {
         public int codigo { get; set; }
         public string modelo { get; set; }
         public int ano { get; set; }
         public double precoBasico { get; set; }
+        public marca marca { get; set; }
+        public List<Acessorio> acessorios;
 
-        public carro(int codigo, string modelo, int ano, double precoBasico) {
+        public carro(int codigo, string modelo, int ano, double precoBasico, marca marca) {
             this.codigo = codigo;
             this.modelo = modelo;
             this.ano = ano;
             this.precoBasico = precoBasico;
+            this.marca = marca;
+            acessorios = new List<Acessorio>();
         }
 
         public void precoTotal() {
