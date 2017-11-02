@@ -1,0 +1,7 @@
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\obj\Debug\SistemaCarros.csprojResolveAssemblyReference.cache
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\obj\Debug\SistemaCarros.csproj.CoreCompileInputs.cache
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\bin\Debug\SistemaCarros.exe.config
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\bin\Debug\SistemaCarros.exe
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\bin\Debug\SistemaCarros.pdb
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\obj\Debug\SistemaCarros.exe
+C:\Users\Eder\source\repos\SistemaCarros\SistemaCarros\obj\Debug\SistemaCarros.pdb
