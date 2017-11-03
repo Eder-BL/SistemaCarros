@@ -72,5 +72,35 @@ namespace SistemaCarros.dominio {
             Program.carro.Add(C);
         }
 
+        public static void cadastrasAcessorio() {
+            Console.WriteLine("Digite os dados do acessório: ");
+            Console.Write("Carro (código): ");
+            int codCarro = int.Parse(Console.ReadLine());
+            int pos = Program.carro.FindIndex(x => x.codigo == codCarro);
+            if (pos == -1) {
+                throw new ModelException("Código de carro não encontrado: " + codCarro);
+            }
+            Console.Write("Descrição: ");
+            string nome = Console.ReadLine();
+            Console.Write("Preço: ");
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            carro C = Program.carro[pos];
+            Acessorio A = new Acessorio(nome, preco, C);
+            C.acessorios.Add(A);
+        }
+
+        public static void mostrarCarro(List<carro> carros) {
+            Console.Write("Digite o código do carro: ");
+            int codCarro = int.Parse(Console.ReadLine());
+            int pos = carros.FindIndex(x => x.codigo == codCarro);
+            if (pos == -1) {
+                throw new ModelException("Código de carro não encontrado: " + codCarro);
+            }
+            Console.WriteLine(carros[pos]);
+            Console.WriteLine();
+        }
+
+
+
     }
 }

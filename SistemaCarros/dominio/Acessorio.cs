@@ -13,7 +13,7 @@ namespace SistemaCarros.dominio {
         }
 
         public override string ToString() {
-            return nome + ", Preço"
+            return nome + ", Preço: "
                 + preco.ToString("F2", CultureInfo.InvariantCulture);
         }
 

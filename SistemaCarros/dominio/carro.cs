@@ -33,9 +33,9 @@ namespace SistemaCarros.dominio {
                 + ", Preço básico: " + precoBasico.ToString("F2", CultureInfo.InvariantCulture)
                 + ", Preço total: " + precoTotal().ToString("F2", CultureInfo.InvariantCulture);
             if (acessorios.Count > 0) {
-                s = s + "\nAcessórios:";
+                s = s + "\nAcessórios: ";
                 for (int i=0; i<acessorios.Count; i++) {
-                    s = s + acessorios[i];
+                    s = s + "\n" + acessorios[i];
                 }
             }
             return s;

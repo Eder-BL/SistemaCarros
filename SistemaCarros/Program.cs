@@ -75,9 +75,27 @@ namespace SistemaCarros {
 
                 }
                 else if (opcao == 5) {
+                    try {
+                        Tela.cadastrasAcessorio();
+                    }
+                    catch (ModelException e) {
+                        Console.WriteLine("Erro de negócio: " + e.Message);
+                    }
+                    catch (Exception e) {
+                        Console.WriteLine("Erro inesperado: " + e.Message);
+                    }
 
                 }
                 else if (opcao == 6) {
+                    try {
+                        Tela.mostrarCarro(carro);
+                    }
+                    catch (ModelException e) {
+                        Console.WriteLine("Erro de negócio: " + e.Message);
+                    }
+                    catch (Exception e) {
+                        Console.WriteLine("Erro inesperado: " + e.Message);
+                    }
 
                 }
                 else if (opcao == 7) {
